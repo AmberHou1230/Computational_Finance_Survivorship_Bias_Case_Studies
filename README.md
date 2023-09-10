@@ -5,8 +5,76 @@
 * The reasons for a company to cease to exist are varied and may include mergers, acquisitions, corporate restructurings, or bankruptcy
 * Including only the “winners” when evaluating portfolio performance will likely skew the data, resulting in overestimating its historical returns.
 
-## Case Studies Walkthrough
+## Case Study #1 - (20010103 - FOMC Surprise)
+Since 2000, your co-worker, Karen, tells everyone at the Portfolio Management weekly meeting that you should follow a MOMENTUM strategy.
 
+ 1. "It is very safe!"
+ 2. "We want to buy what is going up and short what is going down".
+ 3. "The backtests look great, except we sometimes get big drawdowns"
+ 4. That is easily solved. I put a stop order at 2% maximum loss and now the strategy only makes money most of the time!
+
+In the midst of the dot-com bust, our favorite QQQ has dropped from the 3/2000 peak. As QQQ crashed, the strategy sold more and more QQQ until it was max short. Your boss starts worrying about a big upswing that can ruin all the accumulated profits.
+
+ 1. "What about large intraday moves?"
+ 2. "Well, all companies report overnight and the FOMC only meets when scheduled, so we only have to watch for those and lessen positions before those times."
+
+20010103 - "In a surprise move, the Federal Reserve slashed short-term interest rates Wednesday and signaled it is ready to make further cuts to keep the U.S. economy from sliding into a recession."
+
+https://money.cnn.com/2001/01/03/economy/fed/
+
+Did the stop work?
+* Connect and load data to MongoDB.
+* Collection: CaseStudyDb
+* Search for: 
+ 1. Symbol = QQQ
+ 2. Date = 20010103
+
+Other fields are:
+
+c - List of close prices for returned candles.
+
+h - List of high prices for returned candles.
+
+l - List of low prices for returned candles.
+
+o - List of open prices for returned candles.
+
+s - Status of the response. This field can either be ok or no_data.
+
+t - List of timestamp for returned candles.
+
+v - List of volume data for returned candles.
+
+## Case Study #2 - 20080919 SEC Halts Short Selling of Financial Stocks to Protect Investors and Markets
+In 2008, the SEC did something that no one expected. It halted short selling in a list of financial stocks. If no one can short, are price drops impossible?
+
+https://www.sec.gov/news/press/2008/2008-211.htm
+
+Announced on 20080919 pre-market, is that a good day to BUY?
+* Connect and load data to MongoDB.
+* Collection: CaseStudyDb
+* Search for: 
+ 1. Symbol = XLF
+ 2. Date = 20080919
+
+Other fields are:
+
+c - List of close prices for returned candles.
+
+h - List of high prices for returned candles.
+
+l - List of low prices for returned candles.
+
+o - List of open prices for returned candles.
+
+s - Status of the response. This field can either be ok or no_data.
+
+t - List of timestamp for returned candles.
+
+v - List of volume data for returned candles.
+
+
+## Case Studies Walkthrough
 ### Web Parsing - iShares
 
 * iShares is one of the biggest providers of ETFs. It is a subsidiary of BlackRock.
