@@ -75,7 +75,7 @@ v - List of volume data for returned candles.
 
 
 ## Case Studies Walkthrough
-See step-by-step analysis in codes and comments here: 
+See step-by-step analysis in codes and comments here: https://github.com/AmberHou1230/Computational_Finance_Survivorship_Bias_Case_Studies/blob/main/Beautiful_Soup%2C_MongoDb%2C_Survivorship_bias.ipynb
 
 ### Web Parsing - iShares, StockAnalysis, Finviz
 
