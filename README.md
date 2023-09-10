@@ -75,9 +75,12 @@ v - List of volume data for returned candles.
 
 
 ## Case Studies Walkthrough
-### Web Parsing - iShares
+See step-by-step analysis in codes and comments here: 
+
+### Web Parsing - iShares, StockAnalysis, Finviz
 
 * iShares is one of the biggest providers of ETFs. It is a subsidiary of BlackRock.
+* Why do we need StockAnalysis and Finviz after parsing iShares? iShares is just one company and doesn't have all the ETFs. 
 
 * Additional notes on ETFs:
   *  The upside of mutual funds is diversification. What's the downside? Buying and selling frequently generate taxable activities, which then get passed onto the shareholders.
